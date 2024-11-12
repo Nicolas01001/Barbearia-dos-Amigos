@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<a href="index.html"> <button class="Butao"> SAIR </button></A>
+<body>
+    <form id="clientForm">
+        <input type="text" id="clientName" placeholder="Nome do Cliente" required>
+        <input type="text" id="service" placeholder="Serviço Prestado" required>
+        <input type="number" id="price" placeholder="Preço" required>
+        <select id="paymentMethod">
+            <option value="Dinheiro">Dinheiro</option>
+            <option value="Cartão de Crédito">Cartão de Crédito</option>
+            <option value="Cartão de Débito">Cartão de Débito</option>
+        </select>
+        <button type="submit">Adicionar Cliente</button>
+    </form>
+    
+    <h2>Clientes Adicionados</h2>
+    <table id="clientTable">
+        <thead>
+            <tr>
+                <th>Nome do Cliente</th>
+                <th>Preço</th>
+                <th>Forma de Pagamento</th>
+                <th>Serviço</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
